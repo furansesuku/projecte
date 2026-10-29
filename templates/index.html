@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projectes IA Francesc Esteve</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #FFF4D6;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222;
+        }
+        main {
+            max-width: 420px;
+            margin: 0 auto;
+            padding: 40px 16px;
+            text-align: center;
+        }
+        h1 {
+            color: #E02020;
+            font-size: 1.9rem;
+            margin-bottom: 30px;
+        }
+        .card {
+            background: #FFF2CF;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            padding: 30px 24px;
+        }
+        .projecte + .projecte {
+            margin-top: 24px;
+        }
+        .btn {
+            display: block;
+            background: #E02020;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-decoration: none;
+            padding: 14px 24px;
+            border-radius: 10px;
+            transition: opacity 0.2s;
+        }
+        .btn:hover {
+            opacity: 0.85;
+        }
+        .descripcio {
+            color: #555;
+            margin: 10px 0 0;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Projectes IA Francesc Esteve</h1>
+        <div class="card">
+            {% for p in projectes %}
+            <div class="projecte">
+                <a class="btn" href="{{ p.url }}">{{ p.nom }}</a>
+                <p class="descripcio">{{ p.descripcio }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+</body>
+</html>
