@@ -7,12 +7,12 @@ PROJECTES = [
     {
         "nom": "Somriures",
         "descripcio": "Joc per a la campanya solidària #RiuadadeNassos",
-        "url": "http://142.132.183.54/festeve/somriures/",
+        "url": "../somriures/",
     },
     {
         "nom": "Benzineres",
         "descripcio": "Web per veure les benzineres més econòmiques de Catalunya",
-        "url": "http://142.132.183.54/festeve/benzineres/",
+        "url": "../benzineres/",
     },
 ]
 
