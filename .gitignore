@@ -4,3 +4,4 @@ __pycache__/
 .env
 mostra.json
 taula_idescat.csv
+*.log
